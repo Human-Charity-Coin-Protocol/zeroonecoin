@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2014-2017 The zeroone Core developers
 // Copyright (c) 2017-2018 The ZeroOne Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -773,7 +773,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
     file << "\n";
 
     UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("dashcoreversion", CLIENT_BUILD));
+    obj.push_back(Pair("zeroonecoreversion", CLIENT_BUILD));
     obj.push_back(Pair("lastblockheight", chainActive.Height()));
     obj.push_back(Pair("lastblockhash", chainActive.Tip()->GetBlockHash().ToString()));
     obj.push_back(Pair("lastblocktime", EncodeDumpTime(chainActive.Tip()->GetBlockTime())));

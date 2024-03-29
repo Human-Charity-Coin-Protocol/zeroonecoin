@@ -214,7 +214,7 @@ class MasternodeInfo:
         self.collateral_out = collateral_out
 
 
-class DashTestFramework(BitcoinTestFramework):
+class zerooneTestFramework(BitcoinTestFramework):
     def __init__(self, num_nodes, masterodes_count, extra_args):
         super().__init__()
         self.mn_count = masterodes_count

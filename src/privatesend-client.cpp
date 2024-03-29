@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 The Dash Core developers
+// Copyright (c) 2014-2018 The zeroone Core developers
 // Copyright (c) 2018-2019 The ZeroOne Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -130,7 +130,7 @@ void CPrivateSendClientManager::ProcessMessage(CNode* pfrom, const std::string& 
 void CPrivateSendClientSession::ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStream& vRecv, CConnman& connman)
 {
     if (fMasternodeMode) return;
-    if (fLiteMode) return; // ignore all Dash related functionality
+    if (fLiteMode) return; // ignore all zeroone related functionality
     if (!masternodeSync.IsBlockchainSynced()) return;
 
     if (strCommand == NetMsgType::DSSTATUSUPDATE) {

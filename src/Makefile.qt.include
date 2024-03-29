@@ -1,5 +1,5 @@
 # Copyright (c) 2013-2019 The Bitcoin Core developers
-# Copyright (c) 2014-2019 The Dash Core developers
+# Copyright (c) 2014-2019 The zeroone Core developers
 # Copyright (c) 2018-2019 The ZeroOne Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -563,7 +563,7 @@ RES_IMAGES = \
   qt/res/images/light-retro/about.png \
   qt/res/images/light-retro/splash.png \
   qt/res/images/light-retro/splash_testnet.png \
-  qt/res/images/light-retro/dash_logo_horizontal.png \
+  qt/res/images/light-retro/zeroone_logo_horizontal.png \
   qt/res/images/light-retro/unchecked.png \
   qt/res/images/light-retro/checked.png \
   qt/res/images/light-retro/drkblue_downArrow.png \
