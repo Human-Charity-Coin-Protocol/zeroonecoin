@@ -123,7 +123,7 @@ static const char UNUSED *zeroone_strings[] = {
                                        "specified?"),
         QT_TRANSLATE_NOOP("zeroone-core", ""
                                        "InstantSend doesn't support sending values that high yet. Transactions are "
-                                       "currently limited to %1 zeroone."),
+                                       "currently limited to %1 DASH."),
         QT_TRANSLATE_NOOP("zeroone-core", ""
                                        "InstantSend requires inputs with at least %d confirmations, you might need "
                                        "to wait a few minutes and try again."),
@@ -426,7 +426,7 @@ static const char UNUSED *zeroone_strings[] = {
         QT_TRANSLATE_NOOP("zeroone-core", "Invalid spork address specified with -sporkaddr"),
         QT_TRANSLATE_NOOP("zeroone-core", "KeePassHttp id for the established association"),
         QT_TRANSLATE_NOOP("zeroone-core", "KeePassHttp key for AES encrypted communication with KeePass"),
-        QT_TRANSLATE_NOOP("zeroone-core", "Keep N zeroone anonymized (%u-%u, default: %u)"),
+        QT_TRANSLATE_NOOP("zeroone-core", "Keep N DASH anonymized (%u-%u, default: %u)"),
         QT_TRANSLATE_NOOP("zeroone-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
         QT_TRANSLATE_NOOP("zeroone-core", "Keep the transaction memory pool below <n> megabytes (default: %u)"),
         QT_TRANSLATE_NOOP("zeroone-core", "Keypool ran out, please call keypoolrefill first"),

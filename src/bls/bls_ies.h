@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The zeroone Core developers
+// Copyright (c) 2018 The Dash Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef zeroone_CRYPTO_BLS_IES_H
-#define zeroone_CRYPTO_BLS_IES_H
+#ifndef DASH_CRYPTO_BLS_IES_H
+#define DASH_CRYPTO_BLS_IES_H
 
 #include "bls.h"
 #include "streams.h"
@@ -161,4 +161,4 @@ public:
     }
 };
 
-#endif // zeroone_CRYPTO_BLS_IES_H
+#endif // DASH_CRYPTO_BLS_IES_H

@@ -1,4 +1,4 @@
-zeroone*.sublime-project
+*.sublime-project
 *.sublime-workspace
 .idea
 todo.txt
@@ -84,8 +84,8 @@ libconftest.dylib*
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-zeroone-qt
-zeroone-Qt.app
+dash-qt
+Dash-Qt.app
 
 # Unit-tests
 Makefile.test

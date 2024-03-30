@@ -1,7 +1,7 @@
-// Copyright (c) 2014-2017 The zeroone Core developers
+// Copyright (c) 2014-2017 The Dash Core developers
 // Distributed under the MIT software license, see the accompanying
-#ifndef zeroone_HDCHAIN_H
-#define zeroone_HDCHAIN_H
+#ifndef DASH_HDCHAIN_H
+#define DASH_HDCHAIN_H
 
 #include "key.h"
 #include "sync.h"
@@ -147,4 +147,4 @@ public:
     std::string GetKeyPath() const;
 };
 
-#endif // zeroone_HDCHAIN_H
+#endif // DASH_HDCHAIN_H

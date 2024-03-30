@@ -920,7 +920,7 @@ bool static AlreadyHave(const CInv& inv) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
         return mapBlockIndex.count(inv.hash);
 
     /* 
-        zeroone Related Inventory Messages
+        Dash Related Inventory Messages
 
         --
 

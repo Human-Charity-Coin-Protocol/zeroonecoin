@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The zeroone Core developers
+// Copyright (c) 2018 The Dash Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef zeroone_QUORUMS_BLOCKPROCESSOR_H
-#define zeroone_QUORUMS_BLOCKPROCESSOR_H
+#ifndef DASH_QUORUMS_BLOCKPROCESSOR_H
+#define DASH_QUORUMS_BLOCKPROCESSOR_H
 
 #include "llmq/quorums_commitment.h"
 
@@ -58,4 +58,4 @@ extern CQuorumBlockProcessor* quorumBlockProcessor;
 
 }
 
-#endif//zeroone_QUORUMS_BLOCKPROCESSOR_H
+#endif//DASH_QUORUMS_BLOCKPROCESSOR_H

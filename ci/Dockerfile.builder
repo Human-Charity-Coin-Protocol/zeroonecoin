@@ -18,9 +18,9 @@ RUN apt-get update && apt-get install -y \
 # Python stuff
 RUN pip3 install pyzmq # really needed?
 
-# zeroone_hash
-RUN git clone https://github.com/zeroonepay/zeroone_hash
-RUN cd zeroone_hash && python3 setup.py install
+# dash_hash
+RUN git clone https://github.com/dashpay/dash_hash
+RUN cd dash_hash && python3 setup.py install
 
 ARG USER_ID=1000
 ARG GROUP_ID=1000
@@ -28,8 +28,8 @@ ARG GROUP_ID=1000
 # add user with specified (or default) user/group ids
 ENV USER_ID ${USER_ID}
 ENV GROUP_ID ${GROUP_ID}
-RUN groupadd -g ${GROUP_ID} zeroone
-RUN useradd -u ${USER_ID} -g zeroone -s /bin/bash -m -d /zeroone zeroone
+RUN groupadd -g ${GROUP_ID} dash
+RUN useradd -u ${USER_ID} -g dash -s /bin/bash -m -d /dash dash
 
 # Extra packages
 ARG BUILD_TARGET=linux64
@@ -47,13 +47,13 @@ RUN \
   update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix; \
   exit 0
 
-RUN mkdir /zeroone-src && \
+RUN mkdir /dash-src && \
   mkdir -p /cache/ccache && \
   mkdir /cache/depends && \
   mkdir /cache/sdk-sources && \
-  chown $USER_ID:$GROUP_ID /zeroone-src && \
+  chown $USER_ID:$GROUP_ID /dash-src && \
   chown $USER_ID:$GROUP_ID /cache && \
   chown $USER_ID:$GROUP_ID /cache -R
-WORKDIR /zeroone-src
+WORKDIR /dash-src
 
-USER zeroone
+USER dash

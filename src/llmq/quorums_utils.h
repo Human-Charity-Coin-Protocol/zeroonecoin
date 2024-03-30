@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The zeroone Core developers
+// Copyright (c) 2018 The Dash Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef zeroone_QUORUMS_UTILS_H
-#define zeroone_QUORUMS_UTILS_H
+#ifndef DASH_QUORUMS_UTILS_H
+#define DASH_QUORUMS_UTILS_H
 
 #include "consensus/params.h"
 
@@ -25,4 +25,4 @@ public:
 
 }
 
-#endif//zeroone_QUORUMS_UTILS_H
+#endif//DASH_QUORUMS_UTILS_H

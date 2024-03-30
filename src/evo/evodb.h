@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The zeroone Core developers
+// Copyright (c) 2018 The Dash Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef zeroone_EVODB_H
-#define zeroone_EVODB_H
+#ifndef DASH_EVODB_H
+#define DASH_EVODB_H
 
 #include "dbwrapper.h"
 #include "sync.h"
@@ -67,4 +67,4 @@ public:
 
 extern CEvoDB* evoDb;
 
-#endif //zeroone_EVODB_H
+#endif //DASH_EVODB_H
