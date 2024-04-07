@@ -32,7 +32,7 @@ To obtain it, register for a developer account, then download the [Xcode 7.3.1 d
 This file is several gigabytes in size, but only a single directory inside is
 needed:
 ```
-Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk
 ```
 
 Unfortunately, the usual linux tools (7zip, hpmount, loopback mount) are incapable of opening this file.
