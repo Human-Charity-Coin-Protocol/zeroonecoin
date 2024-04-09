@@ -571,7 +571,7 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path("/");
     else
         pathRet = fs::path(pszHome);
-#ifdef __APPLE__
+#ifdef MAC_OSX
     // Mac
     return pathRet / "Library/Application Support/ZeroOneCore";
 #else
@@ -792,7 +792,7 @@ void AllocateFileRange(FILE *file, unsigned int offset, unsigned int length) {
     nFileSize.u.HighPart = nEndPos >> 32;
     SetFilePointerEx(hFile, nFileSize, 0, FILE_BEGIN);
     SetEndOfFile(hFile);
-#elif defined(__APPLE__)
+#elif defined(MAC_OSX)
     // OSX specific version
     fstore_t fst;
     fst.fst_flags = F_ALLOCATECONTIG;
@@ -884,7 +884,7 @@ void RenameThread(const char* name)
 #elif (defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__DragonFly__))
     pthread_set_name_np(pthread_self(), name);
 
-#elif defined(__APPLE__)
+#elif defined(MAC_OSX)
     pthread_setname_np(name);
 #else
     // Prevent warnings for unused parameters...
@@ -898,7 +898,7 @@ std::string GetThreadName()
 #if defined(PR_GET_NAME)
     // Only the first 15 characters are used (16 - NUL terminator)
     ::prctl(PR_GET_NAME, name, 0, 0, 0);
-#elif defined(__APPLE__)
+#elif defined(MAC_OSX)
     pthread_getname_np(pthread_self(), name, 16);
 // #elif (defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__DragonFly__))
 // #else
@@ -940,7 +940,7 @@ void SetupEnvironment()
 #endif
     // On most POSIX systems (e.g. Linux, but not BSD) the environment's locale
     // may be invalid, in which case the "C" locale is used as fallback.
-#if !defined(WIN32) && !defined(__APPLE__) && !defined(__FreeBSD__) && !defined(__OpenBSD__)
+#if !defined(WIN32) && !defined(MAC_OSX) && !defined(__FreeBSD__) && !defined(__OpenBSD__)
     try {
         std::locale(""); // Raises a runtime error if current locale is invalid
     } catch (const std::runtime_error&) {
@@ -1037,3 +1037,4 @@ std::string SafeIntVersionToString(uint32_t nVersion)
         return "invalid_version";
     }
 }
+
