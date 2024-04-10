@@ -6,8 +6,8 @@ def targets = [
 
 def osslTarUrl = 'http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz'
 def osslPatchUrl = 'https://bitcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch'
-def SDK_URL='https://github.com/phracker/MacOSX-SDKs/releases/download/'
-def OSX_SDK='11.3'
+def SDK_URL='https://bitcoincore.org/depends-sources/sdks'
+def OSX_SDK='10.11'
 def proc = 4
 def mem = 2000
 

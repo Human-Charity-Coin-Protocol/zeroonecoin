@@ -80,9 +80,9 @@ elif [ "$BUILD_TARGET" = "linux64_release" ]; then
   export BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports"
   export PYZMQ=true
 elif [ "$BUILD_TARGET" = "mac" ]; then
-  export HOST=x86_64-apple-darwin20
+  export HOST=x86_64-apple-darwin11
   export PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools"
   export BITCOIN_CONFIG="--enable-gui --enable-reduce-exports"
-  export OSX_SDK=11.3
+  export OSX_SDK=10.11
   export GOAL="deploy"
 fi
